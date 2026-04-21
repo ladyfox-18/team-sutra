@@ -1,19 +1,17 @@
+
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBnDsLBdJwXnWfoq5dRniellNh7P3IROAU",
-  authDomain: "gdg-solution-challenge-b98f0.firebaseapp.com",
-  databaseURL: "https://gdg-solution-challenge-b98f0-default-rtdb.firebaseio.com",
-  projectId: "gdg-solution-challenge-b98f0",
-  storageBucket: "gdg-solution-challenge-b98f0.firebasestorage.app",
-  messagingSenderId: "308831342598",
-  appId: "1:308831342598:web:81f09f74bfb778309fb387",
-  measurementId: "G-TD0JWPHC6D"
+  apiKey: "AIzaSyCUHqiyhiElGV1UHqH0fV8au8_vqmsWh8A",
+  authDomain: "ngo-gdg.firebaseapp.com",
+  projectId: "ngo-gdg",
+  storageBucket: "ngo-gdg.firebasestorage.app",
+  messagingSenderId: "703613585354",
+  appId: "1:703613585354:web:ffbf00cc535ef27cc8b133",
+  measurementId: "G-ZDZLCPM938"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export const auth = getAuth(app);
-
-export default app;
+const analytics = getAnalytics(app);
